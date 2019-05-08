@@ -1,0 +1,24 @@
+body {
+    background-color: grey;
+}
+main {
+    background-color: white;
+    border-bottom: 20px solid firebrick;
+    height: 100px;
+}
+header {
+    display: flex;
+}
+header ul {
+    display: flex;
+}
+.top-menu {
+    background-color: #4682B4;
+}
+.top-menu ul a {
+    color: white;
+    font-size: 20px;
+}
+.top-menu ul a:hover {
+    background-color: firebrick;
+}
