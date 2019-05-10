@@ -3,11 +3,12 @@ body {
 }
 main {
     background-color: white;
-    border-bottom: 20px solid firebrick;
-    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
 }
 header {
     display: flex;
+    border-bottom: 20px solid firebrick;
 }
 header ul {
     display: flex;
@@ -21,4 +22,31 @@ header ul {
 }
 .top-menu ul a:hover {
     background-color: firebrick;
+}
+.logo {
+    padding: 15px;
+    text-align: center;
+}
+.top-menu, .content {
+    width: 700px;
+}
+.logo, aside {
+    width: 300px;
+    border-right: 20px solid firebrick;
+    padding-top: 15px;
+}
+header, .page {
+    display: flex;
+}
+aside {
+    background-color: deepskyblue;
+    text-align: center;
+    font-size: 25px;
+}
+aside ul a {
+    color: white;
+}
+figure {
+    float: left;
+    padding: 10px;
 }
