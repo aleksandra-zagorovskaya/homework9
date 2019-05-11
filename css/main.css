@@ -1,5 +1,6 @@
 body {
     background-color: grey;
+    font-family: Arial;
 }
 main {
     background-color: white;
@@ -8,10 +9,11 @@ main {
 }
 header {
     display: flex;
-    border-bottom: 20px solid firebrick;
+    border-bottom: 15px solid #DC143C;;
 }
 header ul {
     display: flex;
+    justify-content: flex-end;
 }
 .top-menu {
     background-color: #4682B4;
@@ -19,20 +21,24 @@ header ul {
 .top-menu ul a {
     color: white;
     font-size: 20px;
+    padding: 10px 15px;
 }
 .top-menu ul a:hover {
-    background-color: firebrick;
+    background-color: #DC143C;
 }
 .logo {
-    padding: 15px;
     text-align: center;
 }
 .top-menu, .content {
     width: 700px;
+    padding: 20px;
+}
+.content {
+    margin-right: 20px;
 }
 .logo, aside {
     width: 300px;
-    border-right: 20px solid firebrick;
+    border-right: 15px solid #DC143C;
     padding-top: 15px;
 }
 header, .page {
@@ -41,7 +47,7 @@ header, .page {
 aside {
     background-color: deepskyblue;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 aside ul a {
     color: white;
@@ -50,3 +56,27 @@ figure {
     float: left;
     padding: 10px;
 }
+h1, h2, figcaption {
+    font-weight: bold;
+    font-size: 20px;
+}
+footer {
+    background-color: #DC143C;
+    color: white;
+    padding: 15px;
+}
+.top-menu ul {
+    position: relative;
+}
+.top-menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.top-menu li:hover ul {
+    display: block;
+}
+/*.top-menu ul ul a {
+    margin-bottom: 40px;
+}*/
