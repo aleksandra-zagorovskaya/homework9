@@ -1,51 +1,56 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: #f0f0f0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    padding: 0 60px;
 }
 main {
     background-color: white;
     margin: 0 auto;
     box-shadow: 3px 0 6px rgba(0,0,0,0.3), -3px 0 6px rgba(0,0,0,0.3);
 }
-header {
+header, .page {
     display: flex;
-    border-bottom: 15px solid #DC143C;;
 }
-.top-menu {
-    text-align: right;
+header {
+    border-bottom: 15px solid #DC143C;
 }
-header ul {
-    display: inline-block;
+.menu-inline {
+    display: flex;
+    float: right;
 }
-.top-menu ul li {
-    padding: 10px 15px;
-    background-color: #4682B4;
-    float: left;
+header .menu-inline > li {
+    display: block;
+    padding: 5px 10px;
+    background-color: cornflowerblue;
 }
-.top-menu ul a {
+header li a {
     color: white;
-    font-size: 20px;
+    text-decoration: none;
 }
-.top-menu li:hover {
+.menu-inline > li:hover {
     background-color: #DC143C;
 }
-/*.logo {
-    padding-left: 10px;
-}*/
+.submenu {
+    display: none;
+}
+.menu-inline li:hover .submenu {
+    display: block;
+    background-color: cornflowerblue;
+}
 .top-menu, .content {
     width: calc(100% - 220px);
 }
-.content {
-    padding: 20px;
-    line-height: 20px;
-}
 .logo, aside {
     width: 220px;
-    /*border-right: 15px solid #DC143C;*/
+    border-right: 15px solid #DC143C;
     padding-top: 15px;
-}
-header, .page {
-    display: flex;
 }
 aside {
     background-color: deepskyblue;
@@ -54,6 +59,10 @@ aside {
 }
 aside ul a {
     color: white;
+}
+.content {
+    padding: 20px;
+    line-height: 20px;
 }
 figure {
     float: left;
@@ -68,11 +77,5 @@ footer {
     color: white;
     padding: 15px;
 }
-.submenu {
-    display: none;
-    background-color: black;
-}
-.top-menu li:hover .submenu {
-    display: block;
-}
+
 
