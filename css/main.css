@@ -25,6 +25,8 @@ header {
     display: flex;
     float: right;
 }
+
+
 header .menu-inline > li {
     display: block;
     padding: 10px 10px;
