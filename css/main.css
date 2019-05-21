@@ -27,22 +27,30 @@ header {
 }
 header .menu-inline > li {
     display: block;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: cornflowerblue;
+    position: relative;
 }
 header li a {
     color: white;
-    text-decoration: none;
 }
 .menu-inline > li:hover {
     background-color: #DC143C;
 }
 .submenu {
     display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 5px;
+    text-align: center;
 }
 .menu-inline li:hover .submenu {
     display: block;
     background-color: cornflowerblue;
+}
+.submenu li:hover {
+    background-color: #DC143C;
 }
 .top-menu, .content {
     width: calc(100% - 220px);
@@ -59,6 +67,9 @@ aside {
 }
 aside ul a {
     color: white;
+}
+aside li {
+    padding: 5px 0;
 }
 .content {
     padding: 20px;
